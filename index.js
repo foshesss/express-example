@@ -8,17 +8,17 @@ app.use(bodyParser.json())
 // this allows us to use all files in the public folder
 app.use(express.static(__dirname + '/public'))
 
-// GET, which returns the index.html page
+// GET, which serves the index.html page
 app.get("/", (req, res) => {
     res.sendFile("public/html/index.html", { root: __dirname })
 })
 
-// GET, which returns the about.html page
+// GET, which serves the about.html page
 app.get("/about", (req, res) => {
     res.sendFile("public/html/about.html", { root: __dirname })
 })
 
-// GET, which returns the catalog.html page
+// GET, which serves the catalog.html page
 app.get("/catalog", (req, res) => {
     res.sendFile("public/html/catalog.html", { root: __dirname })
 })
