@@ -1,0 +1,7 @@
+#homepage-div {
+    background: lightblue;
+}
+
+#homepage-div > p, #homepage-div > a {
+    display: inline-block;
+}
